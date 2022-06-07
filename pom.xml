@@ -6,7 +6,11 @@
 
   <groupId>com.binhdv</groupId>
   <artifactId>micro_service_1</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>customer</module>
+  </modules>
 
   <name>micro_service_1</name>
   <!-- FIXME change it to the project's website -->
