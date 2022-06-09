@@ -1,13 +1,13 @@
 package com.binhdv.customer;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@AllArgsConstructor
 public class CustomerService {
 
-    @Autowired
-    private CustomerRespository customerRespository;
+    private final CustomerRespository customerRespository;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
